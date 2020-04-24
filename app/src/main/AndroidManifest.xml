@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.phillipscaden.lab04">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".SecondActivity"
+            android:label="Second Activity"
+            android:parentActivityName=".home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.phillipscaden.lab04.home"/>
+        </activity>
+        <activity android:name=".ThirdActivity"
+            android:label="Third Activity"
+            android:parentActivityName=".home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.phillipscaden.lab04.home"/>
+        </activity>
+        <activity android:name=".FourthActivity"
+            android:label="Fourth Activity"
+            android:parentActivityName=".home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.phillipscaden.lab04.home"/>
+        </activity>
+        <activity android:name=".FifthActivity"
+            android:label="Fifth Activity"
+            android:parentActivityName=".home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.phillipscaden.lab04.home"/>
+        </activity>
+        <activity android:name=".SixthActivity"
+            android:label="Sixth Activity"
+            android:parentActivityName=".home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.phillipscaden.lab04.home"/>
+        </activity>
+        <activity android:name=".SeventhActivity"
+            android:label="Seventh Activity"
+            android:parentActivityName=".home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.phillipscaden.lab04.home"/>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:label="First Activity"
+            android:parentActivityName=".home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.phillipscaden.lab04.home" />
+        </activity>
+        <activity android:name=".home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
